@@ -5,7 +5,7 @@
 */
 
 .theme_dark {
-  --bg-image: url("../images/cover-image-dark.png");
+  --bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
@@ -17,7 +17,6 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-image: var(--bg-image);
   color: var(--text-color);
   background-image: var(--bg-image);
 }

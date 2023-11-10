@@ -3,8 +3,9 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+
 .theme_light {
-  --bg-image: url("../images/cover-image-light.png");
+  --bg-image: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
   --text-color: #353430;
   --title-color: #ffc2e6;

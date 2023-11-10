@@ -2,23 +2,27 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
 :root {
   --main-font: 'IBM Plex Mono';
 }
 
 @media (prefers-color-scheme: light) {
+
   :root {
-    --bg-image: url("../images/cover-image-light.png");
+    --bg-image: url(../images/cover-image-light.png);
     --bg-color: #fff1f7;
     --text-color: #353430;
     --title-color: #ffc2e6;
     --accent-color: #ff8dcb;
   }
+
   .page {
-    background-color: var(--bg-color);
     color: var(--text-color);
+    background-color: var(--bg-color);
     background-image: var(--bg-image);
   }
+
   .header__title,
   .footer__title {
     color: var(--title-color);
@@ -58,8 +62,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   :root {
-    --bg-image: url("../images/cover-image-dark.png");
+    --bg-image: url(../images/cover-image-dark.png);
     --bg-color: #000028;
     --text-color: #f1b2ce;
     --title-color: #db00ff;
@@ -67,7 +72,6 @@
   }
 
   .page {
-    background-image: var(--bg-image);
     color: var(--text-color);
     background-image: var(--bg-image);
   }
