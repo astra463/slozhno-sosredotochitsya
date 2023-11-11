@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/images/favicon.ico" sizes="any" />
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/images/mobile-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -16,7 +18,7 @@
   </head>
   <body class="page theme_light theme_dark">
     <header class="header decorated-zone">
-      <div class="dark-theme-decoration">rec</div>
+      <span aria-hidden="true" class="dark-theme-decoration">rec</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -44,19 +46,18 @@
         </ul>
       </nav>
       <h1 class="header__title">no focus</h1>
-      <div class="header__description">
-        <p class="title-decor">Что делать, когда не можешь делать ничего</p>
-        <p class="title-decor">
-          Или почему нам так сложно сконцентрироваться, особенно когда очень
-          надо
-        </p>
+      <div class="header__description title-decor">
+        <p>Что делать, когда не&nbsp;можешь делать ничего</p>
+        <p>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
       </div>
     </header>
     <main class="content">
-      <section class="content__section">
-        <ul class="section__list">
-          <li class="section__list-element">
-            <h2 class="section__title">Почему сосредоточиться так сложно</h2>
+      <div class="content__section">
+        <div class="article__group">
+          <article class="article__group-element">
+            <h2 class="article__group-title">
+              Почему сосредоточиться так сложно
+            </h2>
             <ul class="card__list">
               <li>
                 <article class="card">
@@ -69,6 +70,7 @@
                     <a
                       href="https://dana.org/article/multicosts-of-multitasking/"
                       class="link"
+                      target="_blank"
                       >выяснили</a
                     >, что мозгу тяжело концентрироваться даже на двух делах
                     одновременно. А когда в поле внимания попадает несколько
@@ -95,9 +97,9 @@
                 </article>
               </li>
             </ul>
-          </li>
-          <li class="section__list-element-middle">
-            <h2 class="section__title section__title-middle">
+          </article>
+          <article class="article__group-element-middle">
+            <h2 class="article__group-title article__group-title-middle">
               Что снижает концентрацию внимания?
             </h2>
             <ul class="card__list card__list-middle">
@@ -145,22 +147,15 @@
                 </article>
               </li>
             </ul>
-          </li>
-          <li class="section__list-element">
-            <h2 class="section__title">
-              Как концентрироваться лучше, чем золотая рыбка (то есть дольше
-              трёх секунд)
-            </h2>
-            <div class="list-container">
-              <p class="section__description title-decor">
-                5 простых (на самом деле не очень) советов
-              </p>
+          </article>
+          <article class="article__group-element">
+            <h2 class="article__group-title">Как концентрироваться лучше, чем золотая рыбка (то&nbsp;есть дольше трёх секунд)</h2>
+            <div class="article__group-container">
+              <h3 class="article__group-container-description title-decor">5&nbsp;простых (на&nbsp;самом деле не&nbsp;очень) советов</h3>
               <ul class="card__list">
                 <li>
                   <article class="card">
-                    <h3 class="card-title title-decor">
-                      Представьте небо и облака
-                    </h3>
+                    <h4 class="card-title title-decor regular-text">Представьте небо и&nbsp;облака</h4>
                     <p class="card-text">
                       Или листья в ручье. Тут дело в лёгкой медитации, которая
                       помогает успокоиться. Ведь часто именно тревожные мысли о
@@ -176,7 +171,7 @@
                 </li>
                 <li>
                   <article class="card">
-                    <h3 class="card-title title-decor">Включите музыку</h3>
+                    <h4 class="card-title title-decor regular-text">Включите музыку</h4>
                     <p class="card-text">
                       Но не любую, и не любимую. Любимая может быть связана с
                       сильными положительными эмоциями, которые тоже очень
@@ -188,13 +183,14 @@
                 </li>
                 <li>
                   <article class="card">
-                    <h3 class="card-title title-decor">Прогуляйтесь</h3>
+                    <h4 class="card-title title-decor regular-text">Прогуляйтесь</h4>
                     <p class="card-text">
                       Или даже пробегитесь. Лучше найти парк или лес: один
                       эксперимент
                       <a
                         href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
                         class="link"
+                        target="_blank"
                         >показал</a
                       >, что созерцание природы повышает концентрацию, в то
                       время как после просмотра городских пейзажей она наоборот
@@ -207,7 +203,7 @@
                 </li>
                 <li>
                   <article class="card">
-                    <h3 class="card-title title-decor">Хорошо ешьте</h3>
+                    <h4 class="card-title title-decor regular-text">Хорошо ешьте</h4>
                     <p class="card-text">
                       Мы — не ваша бабушка, но это правда важно. Выбирайте
                       продукты, которые препятствуют резким скачкам сахара в
@@ -219,7 +215,7 @@
                 </li>
                 <li>
                   <article class="card">
-                    <h3 class="card-title title-decor">Читайте</h3>
+                    <h4 class="card-title title-decor regular-text">Читайте</h4>
                     <p class="card-text">
                       Настоящие бумажные книги. Это правда помогает с
                       концентрацией: чтобы прочитать пост в соцсети, достаточно
@@ -231,11 +227,11 @@
                 </li>
               </ul>
             </div>
-          </li>
-        </ul>
-      </section>
+          </article>
+        </div>
+      </div>
       <section class="gallery__section">
-        <h2 class="gallery__section-title title-decor">А можно в картинках?</h2>
+        <h2 class="gallery__section-title title-decor">А&nbsp;можно в&nbsp;картинках?</h2>
         <ul class="gallery__section-list">
           <li class="gallery__section-element-one">
             <img
